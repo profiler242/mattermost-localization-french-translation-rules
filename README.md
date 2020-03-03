@@ -139,9 +139,9 @@ Bien que l'instance Pootle utilisée par Mattermost offre la possibilité de té
 
 * Toutes les chaînes sont marquées comme `traduites` après que le fichier ait été envoyé, même si des chaînes n'ont pas été traduites;
 * Les traductions peuvent être périmées entre le moment auquel le contributeur télécharge son fichier et renvoie le fichier sur Pootle;
-* Renvoyer les fichiers sur la plateforme écrase la version précédente; dans le cas d'un problème, comme celui évoqué au point précédent avec les commentaires qui peuvent corrompre le build process, il faut qu'un développeur puisse restaurer le fichier dans le cas où il se rend compte que la convertion .po -> JSON échoue. Mattermost ne peut pas garantir qu'un développeur dispose du temps nécessaire pour affectuer cette action.
+* Renvoyer les fichiers sur la plateforme écrase la version précédente; dans le cas d'un problème, comme celui évoqué au point précédent avec les commentaires qui peuvent corrompre le build process, il faut qu'un développeur puisse restaurer le fichier dans le cas où il se rend compte que la convertion .po -> JSON échoue. Mattermost ne peut pas garantir qu'un développeur dispose du temps nécessaire pour éffectuer cette action.
 
-C'est pourquoi, même si ces raisons sont discutables lorsqu'un contributeur agit en âme et conscience, la seule façon de traduire Mattermost, c'est en ligne par le biais de l'instance Pootle mise à disposition. Les traductions hors lignes ne sont pas possibles.
+C'est pourquoi, même si ces raisons sont discutables lorsqu'un contributeur agit en son âme et conscience, la seule façon de traduire Mattermost, c'est en ligne par le biais de l'instance Pootle mise à disposition. Les traductions hors lignes ne sont pas possibles.
 
 ### Tester ses traductions
 
@@ -184,7 +184,7 @@ La traduction francophone est déjà dans un très bon état. Parmi les points �
 
 Ces deux éléments ne sont possibles que si nous pouvons éditer le fichier .po manuellement, passer par le site web de traduction prendrait trop de temps tant la procédure serait répétitive et source d'erreurs.
 
-## Insertion de caractères unicodes
+## Insertion des caractères unicodes
 
 ### Introduction
 
@@ -196,7 +196,7 @@ Il en est de même en fonction de votre navigateur web. Si vous utilisez Firefox
 
 ### Touche compose
 
-Comme expliqué dans l'article Wikipedia, les utilisateurs de KDE ou de programmes écrits à l'aide de la bibliothèque Qt ne peuvent qu'utiliser la touche compose. Cette derière peut être liée à une touche de clavier que vous pouvez spécifier parmi une liste de touches prédéfinies. Ce lien s'effectue dans les paramètres sytèmes de KDE Plasma: `System Settings` > `Input Devices` > `Keyboard` > `Advanced` > `Position of Compose key` ([src.](https://unix.stackexchange.com/a/222791/146454#comment378580_222791)). La touche `Ctrl` de droite est un bon choix. Si vous spécifiez `Alt`, vous allez rentrer en conflict avec la touche `AltGr` utilisée pour placer le dièse par exemple ou tout autre caractère accessible par le 3ième niveau de touche sur les clavier francophones (Azerty belge et Azerty français).
+Comme expliqué dans l'article Wikipedia, les utilisateurs de KDE ou de programmes écrits à l'aide de la bibliothèque Qt ne peuvent qu'utiliser la touche compose. Cette dernière peut être liée à une touche de clavier que vous pouvez spécifier parmi une liste de touches prédéfinies. Ce lien s'effectue dans les paramètres sytèmes de KDE Plasma: `System Settings` > `Input Devices` > `Keyboard` > `Advanced` > `Position of Compose key` ([src.](https://unix.stackexchange.com/a/222791/146454#comment378580_222791)). La touche `Ctrl` de droite est un bon choix. Si vous spécifiez `Alt`, vous allez rentrer en conflict avec la touche `AltGr` utilisée pour placer le dièse par exemple ou tout autre caractère accessible par le 3ième niveau de touche sur les claviers francophones (Azerty belge et Azerty français).
 
 Sous Windows, il vous est également possible d'utiliser le logiciel [WinCompose](https://github.com/samhocevar/wincompose). L'espace fine insécable n'est pas supporté par défaut. Pour le supporter, ajoutez simplement un fichier dans `%USERPROFILE%\.XCompose` avec la ligne suivante:
 
@@ -208,11 +208,11 @@ Une fois le logiciel WinCompose relancé, il vous suffira de taper sur la touche
 
 Sous Linux, le principe est le même, placez dans votre `$HOME` un fichier `.XCompose` et relancez Xorg (ou redémarrez simplement votre machine).
 
-### Table de caractères
+### Table des caractères
 
 Il est également possible de copier-coller le caractère de votre choix en utilisant l'[insertion de caractères spéciaux dans LibreOffice Writer](https://help.libreoffice.org/Common/Special_Character/fr) ou d'utiliser le logiciel de table de caractère propre à votre OS.
 
-* Sous Windows, ouvrez `charmap.exe`, cochez la case `Advanced view`, tappez le caractère que vous souhaitez en toutes lettres en anglais, cliquez sur `Search`, sélectionnez le caractère dans la table de résultats et cliquez sur `Copy`.
+* Sous Windows, ouvrez `charmap.exe`, cochez la case `Advanced view`, tappez le caractère que vous souhaitez en toutes lettres en anglais, cliquez sur `Search`, sélectionnez le caractère dans la table de résultat et cliquez sur `Copy`.
 
  ![Table de caractère sous Windows](charmap_windows_10_0001.png)
 
@@ -351,7 +351,7 @@ donne au sein de l'interface `New message` au singulier et `New messages` pour l
 
 En français, 2 versions de traduction sont nécessaires également. Une pour le singulier (`Nouveau message`) et l'autre pour le pluriel (`Nouveaux messages`).
 
-Dans le syntaxe de formatjs, ceci donne la déclaration suivante :
+Dans la syntaxe de formatjs, ceci donne la déclaration suivante :
 
     {count, plural, one {Nouveau message} other {Nouveaux messages}}
 
@@ -738,7 +738,7 @@ Par exception, on pourra employer le terme `mise à jour` lorsqu'on parlera de r
 | EN | FR |
 | --- | --- |
 | mute | sourdine |
-| Could not mute channel {{.Channel}} as you are not a member. | Impossible de mettre en sourdine le cnal {{.Channel}}, car vous n'êtes pas membre de celui-ci. |
+| Could not mute channel {{.Channel}} as you are not a member. | Impossible de mettre en sourdine le canal {{.Channel}}, car vous n'êtes pas membre de celui-ci. |
 
 ### Notifications push / mobile / desktop
 
@@ -762,13 +762,13 @@ Considérez les termes `NotifyProps` et `Notify Props` comme semblables. Ils doi
 
 ### Optional
 
-Par mesure de cohérence, il est recommandé d'utilisé `Facultatif` au lieu du terme `Optionnel`.
+Par mesure de cohérence, il est recommandé d'utiliser `Facultatif` au lieu du terme `Optionnel`.
 
 ### Override
 
 | EN | FR |
 | --- | --- |
-| Enable integrations to override usernames | Permettre aux intégrations de redéfinir les noms d'utilisateur |
+| Enable integrations to override usernames | Permettre aux intégrations de redéfinir les noms d'utilisateurs |
 
 ### Packaged
 
@@ -838,7 +838,7 @@ Il s'agit du mode dans lequel se trouve Mattermost lorsque les notifications par
 
 ### Preview features
 
-Lorsque ce terme ets employé pour parler des fonctionnalités en test, qui ne sont pas encore stables, parfois appelées beta, on emploiera le terme « fonctionnalités expérimentales ».
+Lorsque ce terme est employé pour parler des fonctionnalités en test, qui ne sont pas encore stables, parfois appelées beta, on emploiera le terme « fonctionnalités expérimentales ».
 
 ### Privacy
 
@@ -866,7 +866,7 @@ Bien que rencontré parfois dans les domaines du réseau, ce concept de limite n
 | Reaction CreateAt property must be greater than the parent post CreateAt. | La propriété de réponse CreateAt doit être plus grande que la valeur de la propriété CreateAt parente. |
 | Missing required Reaction property: create_at. | La propriété requise de réaction est manquante : create_at. |
 
-Au sein de Mattermost, les réactions déterminent les +1 / -1 à des messages. A l'instar d'autres solutions de messagerie comme Facebook Messenger, les réactions peuvent également contenir des émoticônes de la collection standard fournie avec Mattermost voire même des émoticônes personnalisées.
+Au sein de Mattermost, les réactions déterminent les +1 / -1 à des messages. A l'instar d'autres solutions de messagerie comme Facebook Messenger, les réactions peuvent également contenir des émoticônes de la collection standard fournie avec Mattermost voir même des émoticônes personnalisées.
 
 Les réactions ne doivent donc pas être confondues avec les réponses à un message ([cf. Message](#message)).
 
@@ -909,7 +909,7 @@ On utilise le terme `routage` uniquement dans ce cas-ci :
 
 Pour tout le reste, Microsoft utilise au choix : `route` ou `itinéraire`. Dans le cas de Mattermost, de façon à uniformiser les traductions mais également de se rapprocher de la version anglophone, nous utiliserons le terme `route`.
 
-De même, toujours basé sur l'exemple `Initializing team API routes`, nous n'utilisons pas de pluriel pour qualifier le noeud, ni nous n'utilisons de prépositions de lien.
+De même, toujours basé sur l'exemple `Initializing team API routes`, nous n'utilisons pas de pluriel pour qualifier le noeud, ni nous n'utilisons de préposition de lien.
 
 Les propositions suivantes seront donc considérées comme invalides et seront refusées dans Mattermost:
 
@@ -954,13 +954,13 @@ Les traductions telles que `authentification simplifiée` ou `connexion unique` 
 
 | EN | FR |
 | --- | --- |
-| ID Loaded Push Notifications are not configured or supported on this server. | Les notifications push chargées à partir de leur identifiant ne sont pas configurées ou prises en charge sur ce serveur. |
+| ID Loaded Push Notifications are not configured or supported on this server. | Les notifications push chargées à partir de leurs identifiants ne sont pas configurées ou prises en charge sur ce serveur. |
 
 `support` est à traduire par `prendre en charge` de façon à rendre la chose plus correcte d'un point de vue francophone.
 
 ### Sysadmin / system admin / team admin / channel admin
 
-On a choisi `administrateur système` au singulier et `administrateurs système` au pluriel. On sous-entend en effet le terme administrateur de la qualité système de l'informatique (tout ce qui n'est donc pas relatif réseau). Il ne faut donc pas le comprendre comme administrateur des systèmes dinformations/systèmes d'information. D'ailleurs, ici, il est question d'un seul système, celui de Mattermost.
+On a choisi `administrateur système` au singulier et `administrateurs système` au pluriel. On sous-entend en effet le terme administrateur de la qualité système de l'informatique (tout ce qui n'est donc pas relatif au réseau). Il ne faut donc pas le comprendre comme administrateur des systèmes dinformations/systèmes d'information. D'ailleurs, ici, il est question d'un seul système, celui de Mattermost.
 
 On a appliqué la même logique aux administrateurs d'équipe et de canal (respectivement `team admins` et `channel admins`).
 
@@ -990,14 +990,14 @@ Utilisez le terme `conditions d'utilisation personnalisées`. `conditions person
 
 ### Unread
 
-Ni l'Académie françaine, ni les différents dictionnaires semblent s'accorder sur l'usage du tiret entre « non » et l'adjectif ([src.](https://www.dicollecte.org/thread.php?prj=fr&t=17)).
+Ni l'Académie française, ni les différents dictionnaires semblent s'accorder sur l'usage du tiret entre « non » et l'adjectif ([src.](https://www.dicollecte.org/thread.php?prj=fr&t=17)).
 Ici il est proposé de ne pas placer de tiret et d'utiliser donc « non lu ».
 
 ### URL signing
 
 | EN | FR |
 | --- | --- |
-| Additional options such as the URL signing key. Refer to your image proxy documentation to learn more about what options are supported. | Paramètres additionnels tels que la clé de signature d'URL. Consultez la documentation du proxy d'images pour en savoir plus sur les paramètres supportés. |
+| Additional options such as the URL signing key. Refer to your image proxy documentation to learn more about what options are supported. | Paramètres additionnels tels que la clé de signature d'URL. Consultez la documentation du proxy d'image pour en savoir plus sur les paramètres supportés. |
 
 L'URL signing est un principe permettant de protéger les fichiers d'un serveur web d'accès non autorisés à l'aide d'une clé parfois spécifiée dans l'URL elle-même ([src.](https://www.limestonenetworks.com/support/knowledge-center/24/112/what_is_url_signing.html)). En pratique nous pouvons traduire par `clé de signature d'URL`.
 
